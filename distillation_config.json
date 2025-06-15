@@ -1,0 +1,45 @@
+{
+  "model_config": {
+    "teacher_model_name": "t5-large",
+    "student_model_name": "t5-small",
+    "max_input_length": 512,
+    "max_target_length": 128,
+    "cache_dir": "./models_cache"
+  },
+  "data_config": {
+    "dataset_name": "cnn_dailymail",
+    "dataset_version": "3.0.0",
+    "train_size": null,
+    "val_size": null,
+    "test_size": null,
+    "cache_dir": "./data_cache",
+    "num_workers": 4
+  },
+  "distillation_config": {
+    "temperature": 4.0,
+    "alpha": 0.7,
+    "beta": 0.3,
+    "kl_loss_weight": 1.0
+  },
+  "training_config": {
+    "batch_size": 4,
+    "learning_rate": 5e-05,
+    "num_epochs": 3,
+    "warmup_steps": 500,
+    "logging_steps": 100,
+    "save_steps": 1000,
+    "eval_steps": 500,
+    "gradient_accumulation_steps": 4,
+    "max_grad_norm": 1.0,
+    "output_dir": "./distilled_model",
+    "logs_dir": "./logs",
+    "checkpoint_dir": "./checkpoints"
+  },
+  "system_config": {
+    "device": "cuda",
+    "mixed_precision": true,
+    "dry_run": false,
+    "seed": 42,
+    "log_level": "INFO"
+  }
+}

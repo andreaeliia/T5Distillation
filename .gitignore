@@ -1,0 +1,195 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Models and Cache (LARGE FILES)
+models_cache/
+data_cache/
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# Training Outputs
+distilled_model/
+test_distilled_model/
+logs/
+test_logs/
+checkpoints/
+test_checkpoints/
+wandb/
+runs/
+
+# Datasets (usually large)
+data/
+datasets/
+*.arrow
+*.csv
+*.tsv
+*.json.gz
+*.jsonl
+
+# Configuration (optional - uncomment if you want to ignore config)
+# distillation_config.json
+# test_config.json
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.out
+*.err
+
+# Profiling
+*.prof
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Large model files (Hugging Face specific)
+pytorch_model.bin
+tf_model.h5
+model.onnx
+config.json
+tokenizer.json
+vocab.txt
+merges.txt
+special_tokens_map.json
+tokenizer_config.json
+
+# Backup files
+*.bak
+*.backup
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large outputs
+results/
+outputs/
+figures/
+plots/
+
+# Experiment tracking
+mlruns/
+.mlflow/
+
+# Ignore large datasets but keep structure
+# Keep empty directories with .gitkeep files
+**/data/**
+!**/data/.gitkeep
+
+# Security
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.json
+api_keys.txt
